@@ -508,6 +508,12 @@ const munitie = [
     }
   ];  
 
+  const logo = [
+    {
+      Logo:"https://i.postimg.cc/XNtzMNYK/Logo.png",
+    }
+  ];
+
 app.get("/animale", (req, res) => {
   res.json(animale);
 });
@@ -515,6 +521,10 @@ app.get("/animale", (req, res) => {
 app.get("/munitie", (req, res) => {
     res.json(munitie);
   });
+
+app.get("/logo", (req,res) =>{
+  res.json(logo);
+});
 
 app.listen(3000, () => {
   console.log("API-ul rulează la http://localhost:3000");
